@@ -22,7 +22,8 @@ async function createWindow() {
       nodeIntegration: (process.env
           .ELECTRON_NODE_INTEGRATION as unknown) as boolean,
       contextIsolation: !process.env.ELECTRON_NODE_INTEGRATION
-    }
+    },
+    title: 'Odamex Spawner'
   })
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
